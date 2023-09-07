@@ -1,0 +1,87 @@
+Overloading_Static_ThisKey
+this keyword
+Static variables & static methods
+----------------------
+overloading: creating methods/constructors with the same name with different parameters.
+Advantage:
+-----
+saves memory
+saves time
+Consideration for Overloading_Static_ThisKey
+1)Number of parameters
+2) data type of parameters
+
+constructor overloading
+
+this keyword
+
+static ---> applicable for variables and methods
+
+static variables
+static methods
+-----------------------
+
+1) static methods can access only static stuff directly.
+2) static methods can also access non static stuff but through object
+3) Non static methods can access both static & non static stuff
+
+System.out.println()
+--------------------------
+class Test
+{
+static String s ="welcome";
+}
+
+Test.s.length(); --->7
+
+class System
+{
+  static printStream out;
+}
+
+System.out.println("testing") // println is a method for out variable
+System.out.print("testing")
+
+===================================================================
+
+Java Inheritance
+Method Overriding
+super Keyword
+final Keyword
+--------------
+Inheritance: Aquiring all the properties & behavior from one class  to another class.
+
+Parent/base class/super class ---> Child class/sub class/derived class
+
+5 Types of Inheritance
+-----------------
+1) Single -- A to B
+2) Multilevel ---A to B to C
+3) Hierarchical --- A(Parent class) B C D(independent)
+---------------(Extends concept)
+4) Multiple--- A-B to C
+5) Hybrid -- Cobination of Hierarchical + Multiple
+----------------(Interface concept-Implements)
+
+Overloading_Static_ThisKey|Method Overriding Differences
+Overloading_Static_ThisKey:number of parameters & data type should be different to uniquely identify the methods(change the definition of the method)| Overriding: definition of the method
+
+Method Overriding
+---------------------
+Rewrite the methods(initially in Parent class) in child classes.
+    1) method definition should be same
+    2) body should be changed
+
+super Keyword
+---------------
+1) super can be used to refer immediate parent clas instance variable.
+2) super can be used to invoke immediate parent class method
+3) super() can be used to invoke immediate parent class constructor.
+
+final: is a constant, we cant its change variable
+-------------
+final int a=10;
+a=20;
+variable ---> you cannot change the value of the variable
+method --> method cannot be overrid in the child class
+ class  --> class cannot extend into another

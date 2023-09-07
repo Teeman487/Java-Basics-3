@@ -28,6 +28,8 @@ public class StaticExample {
         m1();
         m2();
     }
+
+
     public static void main(String[] args) {
      // static methods can access only static stuff directly.
         System.out.println(StaticExample.a);
@@ -38,10 +40,12 @@ public class StaticExample {
 
         //static methods can also access non static stuff but through object
         StaticExample se = new StaticExample();
-        System.out.println(se.b); // non static variable through objec
+        System.out.println(se.b); // non static variable through object
 
         se.m3();
 
 
     }
+
+
 }
